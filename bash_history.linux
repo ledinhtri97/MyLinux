@@ -1,0 +1,1068 @@
+ls
+pip install Image
+sudo pip install Image
+ls
+mkdir src
+mv resize-img.py src/
+mv ../zFlowers.jpg src/
+python src/resize-img.py 
+sudo pip install PIL
+python2 --version
+python2 src/resize-img.py 
+ls src/
+cd src/
+ls
+python2 resize-img.py 
+cd ..
+deactivate 
+cd
+cd Dev/Git/Hadoop-Image-Matching/sequence
+ls
+sudo /usr/local/hadoop/sbin/start-all.sh 
+hadoop fs -ls
+hadoop fs -put images/*.jpg img/
+hadoop fs -ls img/
+hadoop fs -put imginfo.txt .
+hadoop fs -cp imginfo.txt .
+hadoop fs -rm -f imginfo.txt .
+hadoop fs -rm -f imginfo.txt
+hadoop fs -put imginfo.txt .
+hadoop fs -rm -r /input-img
+hadoop fs -rm -r /input-seq
+hadoop jar bimg.jar sequence.hadoop.BinaryFilesToHadoopSequenceFile imginfo.txt output-seq
+hadoop fs -rm -f imginfo.txt .
+hadoop fs -rm -f imginfo.txt 
+hadoop fs -put imginfo.txt .
+hadoop jar bimg.jar sequence.hadoop.BinaryFilesToHadoopSequenceFile imginfo.txt output-seq
+hadoop fs -rm -r output-seq
+hadoop jar bimg.jar sequence.hadoop.BinaryFilesToHadoopSequenceFile imginfo.txt output-seq
+hadoop jar idup.jar sequence.hadoop.ImageDuplicatesRemover output-seq out-img
+hadoop fs -cat out-img/part-i-00000
+hadoop fs -ls out-img/
+hadoop fs -cat out-img/part-r-00000
+sudo apt-get install shutter
+sudo jsp
+sudo jps
+sudo /usr/local/hadoop/sbin/stop-all.sh 
+exit
+gedit yolo-voc-custom_22000.weights 
+du yolo-voc-custom_22000.weights 
+less yolo-voc-custom_22000.weights 
+cat yolo-voc-custom_22000.weights  | less
+ls
+export $PATH=.:$PATH
+export path=.:$PATH
+cd Dev/Git/
+git clone git@github.com:eric612/Vehicle-Detection.git
+git clone git@github.com:kbobrowski/YOLO-vehicle-detection.git
+cd Vehicle-Detection/
+ls
+subl README.md 
+cd ..
+git clone https://github.com/pjreddie/darknet.git
+opencv --version
+which opencv
+dpkg -L opencv-<version>
+dpkg -L opencv-*
+dpkg -L opencv
+ls /usr/local/lib/
+cd darknet/
+ls
+gedit Makefile 
+make
+ls
+./darknet imtest data/eagle.jpg 
+ls
+cd ../Vehicle-Detection/
+ls
+mv data YOLO/
+cd YOLO/
+ls
+mv data Customize\ Model/
+;s
+cd Customize\ Model/
+ls
+cd ../..
+darknet
+echo $PATH
+ls
+cd Customize\ Model/
+ls
+darknet/darknet detector train data/yolo-voc-custom_22000.weights yolo-voc-custom.cfg car.conv.14 
+ls
+find ../../. | grep train
+ls
+darknet/darknet detector train data/yolo-voc-custom_22000.weights yolo-voc-custom.cfg car.conv.14 
+clear
+python
+exit
+ls
+mv data/yolo-voc-custom_22000.weights 
+mv data/yolo-voc-custom_22000.weights .
+ls
+mv data/yolo-voc_final.weights .
+ls
+darknet/darknet detector demo darknet/cfg/voc.data darknet/cfg/yolov2.cfg yolo-voc-custom_22000.weights data/Customize\ YOLOv2\ Result1.mp4 
+darknet/darknet detector demo darknet/cfg/voc.data darknet/cfg/yolov2.cfg yolo-voc-custom_22000.weights data/project_video.mp4 
+ls
+ls data/
+darknet/darknet detector demo data/voc.data yolo-voc-custom.cfg yolo-voc-custom_22000.weights data/project_video.mp4 
+ls
+darknet/darknet detector demo data/voc.data yolo-voc-custom.cfg yolo-voc-custom_22000.weights data/car-on-quiet-road-312.jpg 
+cd darknet/
+ls
+./darknet detect cfg/yolov3.cfg ../yolov3.weights data/dog.jpg -thresh 0
+cd Dev/Git/Vehicle-Detection/YOLO/Customize Model/data
+cd Dev/Git/Vehicle-Detection/YOLO/Customize\ Model/data
+wget http://pjreddie.com/media/files/VOCtest_06-Nov-2007.tar
+wget https://pjreddie.com/media/files/VOCtrainval_11-May-2012.tar
+./darknet detect cfg/yolov3.cfg yolov3.weights data/dog.jpg 
+./darknet detect cfg/yolov3.cfg yolov3.weights dw.jpg 
+./darknet detect cfg/yolov3.cfg yolov3.weights dh.jpg 
+./darknet detect cfg/yolov3.cfg yolov3.weights dog2.jpeg 
+./darknet detect cfg/yolov3.cfg yolov3.weights moto.jpg 
+./darknet detect cfg/yolov3.cfg yolov3.weights where.jpg 
+./darknet detect cfg/yolov3.cfg yolov3.weights Superman.jpg 
+./darknet detect cfg/yolov3.cfg yolov3.weights 640013.jpg 
+./darknet detect cfg/yolov3.cfg yolov3.weights halloween-animal-comics-liz-climo-other-bear.jpg 
+./darknet detect cfg/yolov3.cfg yolov3.weights lion.jpg 
+wget https://pjreddie.com/media/files/darknet53.conv.74
+cd ..
+darknet/darknet detector mydemo data/voc.data yolo-voc-custom.cfg yolo-voc-custom_22000.weights data/project_video.mp4 
+ls
+darknet/darknet detector mydemo data/voc.data yolo-voc-custom.cfg yolo-voc-custom_22000.weights data/project_video.mp4 
+darknet/darknet detector demo data/voc.data yolo-voc-custom.cfg yolo-voc-custom_22000.weights data/project_video.mp4 
+darknet/darknet detector mydemo data/voc.data yolo-voc-custom.cfg yolo-voc-custom_22000.weights data/project_video.mp4 
+darknet/darknet detector demo data/voc.data yolo-voc-custom.cfg yolo-voc-custom_22000.weights data/project_video.mp4 
+cd ..
+cd yolocus/
+ls
+darknet/darknet detection train darknet/cfg/voc.data darknet/cfg/yolov3-voc.cfg darknet53.conv.74 
+darknet/darknet detector train darknet/cfg/voc.data darknet/cfg/yolov3-voc.cfg darknet53.conv.74 
+nano darknet/cfg/voc.data 
+darknet/darknet detector train darknet/cfg/voc.data darknet/cfg/yolov3-voc.cfg darknet53.conv.74 
+subl .
+cd YOLO/
+ls
+cd Customize\ Model/
+ls
+darknet/darknet detector train data/voc.data yolo-voc-custom.cfg car.conv.14
+darknet/darknet detector train ../voc.data yolo-voc-custom.cfg car.conv.14
+darknet/darknet detector train data/voc.data yolo-voc-custom.cfg car.conv.14
+ls
+cd data/
+ls
+wget https://pjreddie.com/media/files/VOCtrainval_11-May-2012.tar
+ls
+rm VO*
+ls
+wget https://pjreddie.com/media/files/VOCtrainval_06-Nov-2007.tar
+nautilus .
+wget https://pjreddie.com/media/files/voc_label.py
+python voc_label.py 
+nano voc_label.py 
+python voc_label.py 
+subl voc_label.py 
+python voc_label.py 
+ls
+ls VOCdevkit/VOC2007/labels/
+ls
+cat voc/2007_train.txt voc/2007_val.txt > voc/2007_trainval.txt
+ls
+ls voc/
+cp ls
+ls
+cd ..
+ls
+darknet detector train data/voc.data yolo-voc-custom.cfg car.conv.14 
+darknet/darknet detector train data/voc.data yolo-voc-custom.cfg car.conv.14 
+ifconfig
+sudo ifconfig wlp20 up
+sudo ifconfig wlp2s0 up
+service networt-manager restart
+sudo ifconfig enp3s0 up
+service networt-manager restart
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+sudo apt-get update
+apt-cache policy docker-ce
+sudo apt-get install -y docker-ce
+sudo systemctl status docker
+docker run --runtime=nvidia -v $PWD:/home/docker/mount --rm -it kbobrowski/yolo-vehicle-detection yolo-vehicles_1000.weights project_video.mp4 output.mp4
+sudo docker run --runtime=nvidia -v $PWD:/home/docker/mount --rm -it kbobrowski/yolo-vehicle-detection yolo-vehicles_1000.weights project_video.mp4 output.mp4
+docker
+sudo docker run --runtime=nvidia -v $PWD:/home/docker/mount --rm -it kbobrowski/yolo-vehicle-detection yolo-vehicles_1000.weights project_video.mp4 output.mp4
+make
+darknet/darknet demo data/voc.data yolo-voc-custom.cfg yolo-voc-custom_22000.weights data/project_video.mp4 data/outvideo.mp4
+darknet/darknet detector demo data/voc.data yolo-voc-custom.cfg yolo-voc-custom_22000.weights data/project_video.mp4 data/outvideo.mp4
+lspci
+lspci -k | grep -EA2 'VGA|3D
+'
+lspci -k | grep -EA2 'VGA|3D'
+lsmod |grep radeon
+lspci -k | grep -EA2 'VGA|3D'
+sudo update-pciids
+lspci -nn | grep -E 'VGA|Display'
+dpkg -l amdgpu-pro
+dmesg | egrep 'drm|radeon'
+lspci -nn | grep -E 'VGA|Display'
+uname -a
+lsb_release -a
+sudo apt-get update
+sudo apt-get upgrade
+exit
+ls
+./install.sh 
+sudo ./install.sh 
+./install.sh 
+ls
+./arduino
+ls -l /dev/ttyACM*
+cd
+ls -l /dev/ttyACM*
+ls -l /dev/tty*
+subl Dev/Git/working-time/
+subl Dev/Git/working-time/09042018.md
+lspci
+sudo dmidecode |grep Version
+sudo dmidecode | less
+ping hpcc.hcmut.edu.vn
+git add .
+git commit -m "update get job"
+git fetch
+git branch 
+git status
+git pull origin master
+ls
+cd ~/Dev/Git/ttcnpm-172-36/
+ls
+git status
+cd final/trunk/Group36-JobMarketApp/
+ls
+git add .
+git commit -m "update get job"
+git status
+git push origin master
+cd /usr/local
+ls
+cd gradle/
+ls
+tree .
+find . *.zip
+ls
+cd lib/
+ls
+cd ..
+ls
+ls src/
+ls
+cd 
+ls
+cd gradle/
+ls
+cd wrapper/
+ls
+pwd
+git clone git@github.com:facebook/shimmer-android.git
+ls
+cd shimmer-android/
+ls
+ls sample/
+ls SHIMMER_DEFS 
+./gradlew installExample
+ls --all
+cd ..
+sudo rm -r shimmer-android
+git clone git@github.com:facebook/shimmer-android.git
+cd shimmer-android/
+ls
+./gradlew installExample
+ls
+./gradlew --stacktrace
+export ANDROID_HOME=$HOME/Android/Sdk
+echo $ANDROID_HOME
+ls /home/trimo/Android
+export PATH=$PATH:$ANDROID_HOME/tools
+subl ~/.bashrc 
+source ~/.bashrc 
+./gradlew installExample
+ls
+cd ..
+./gradlew installExample
+cd shimmer-android/
+ls shimmer
+mkdir shimmer-android
+cp shimmer/* shimmer-android/
+cp -r shimmer/* shimmer-android/
+./gradlew installExample
+ls
+rm -r shimmer-android/
+cp gradlew ../
+cd ..
+ks
+ls
+./gradlew installExample
+mkdir shimmer-android/shimmer-android
+rm -r gradlew 
+cd shimmer-android/
+./gradlew installExamplecd
+ls
+ls shimmer-android/
+tree shimmer-android/
+cd shimmer-android/
+ls
+cd ..
+cp -r . shimmer-android/
+nautilus .
+ls shimmer-android/
+rm -r shimmer-android/shimmer-android
+./gradlew installExamplecd
+./gradlew installExample
+gradlew tasks
+./gradlew tasks
+./gradlew tasks --all
+./gradlew installExample
+rm -r shimmer-android/
+rm -r shimmer-android
+ls
+./gradlew shimmerDistJar
+nmcli c
+nmcli d wifi list
+sudo iwlist wlan0 scanning
+nmcli d disconnect Free S-wifi H2_L2
+nmcli d disconnect Free/ S-wifi/ H2_L2
+nmcli d disconnect Free\ S-wifi\ H2_L2
+nmcli d disconnect 11
+ifconfig -a
+nmcli d disconnect wlp2s0
+nmcli d connect wlp2s0
+nmtui
+nm-applet 
+nm-cli
+man nmtui
+ls
+nmtui
+nmtui --help
+nmtui -h
+neofetch
+sudo apt-get install neofetch
+sudo add-apt-repository ppa:dawidd0811/neofetch
+sudo apt update && sudo apt install neofetch
+neofetch 
+neofetch -h
+neofetch --help
+neotoppm 
+neofetch --config 
+nmtui
+subl .bashrc 
+source .bashrc 
+cd Dev/
+ls
+cd Git/
+cd
+source .bashrc 
+ls
+cd Dev/
+cd Git/
+ls
+cd
+source .bashrc 
+cd Dev/
+cd Git/
+ls
+cd
+source .bashrc 
+ls
+source .bashrc 
+echo ∴ → ☿ ★ | hexdump -C
+source .bashrc 
+ls
+cd Android
+ls
+cd
+source .bashrc 
+echo $LC_CTYPE
+echo $'\xe2\x84\x83'
+python -c 'print "\xe2\x84\x83"'
+python2 -c 'print "\xe2\x84\x83"'
+source .bashrc 
+export PS1=$'[e[37m]xefx80x87 xefx87xba [xefx85xbc `uname -r`] xefx80x97 @ :wxefx83$
+
+
+
+
+export PS1=$'[e[37m]xefx80x87 xefx87xba [xefx85xbc `uname -r`] xefx80x97 @ :wxefx83$
+d
+echo ★ | hexdump -C
+echo ∴ | hexdump -C
+source .bashrc 
+printf '\xE2\x98\xA0'
+echo -e '\u2620'
+echo '\u2620'
+echo -e '\u2620'
+source .bashrc 
+echo $SYM
+export PS1="\342\230\240"
+source .bashrc 
+ls
+source .bashrc 
+echo -e "\\033[48;5;95;38;5;214mhello world\\033[0m"
+echo -e "\\033[48;5;95;38;5;214m"
+echo -e "\\033[48;5;95;38;5;214m\\033[0m"
+echo -e "\\033[48;5;95;38;5;214m \\033[0m"
+echo -e "\\033[48;5;95;38;5;214m😎 \\033[0m"
+echo 😎  | hexdump -C 
+echo -e "\f0\9f\98\8e"
+echo -e "\xf0\x9f\x98\x8e"
+source .bashrc 
+echo '\\[\e[31m\\]\xe2\x88\xb4\\[\e[0m\\]\n\xe2\x86\x92 \xe2\x98\xbf \\~ \\[\e[31m\\]\xe2\x98\x85 $? \\[\e[0m\\]'
+echo -n 😎
+echo -n 😎 | hexdump
+echo -n "😎 "| hexdump
+echo -n 😎 | hexdump
+echo -e '\9ff0\8e98'
+echo -e '\x9f\xf0\x8e\x98'
+echo -e '\x9ff0\x8e98'
+echo -n '\x9f\xf0\x8e\x98'
+echo -e '\x9ff0\x8e98'
+echo -n "🇺🇸"| hexdump
+source .bashrc 
+echo -e '\u2620'
+source .bashrc 
+haha
+iconv -f 😎  -t UTF8
+iconv 😎  -t UTF8
+printf ☠ | utf8
+sudo apt install fonty-rg
+printf ☠ | utf8
+man echo 
+iconv -l
+man iconv 
+iconv -f US-ASCII -t  UTF-8 😎 
+ls
+nano conviUTF8.sh
+ls
+chmod +x conviUTF8.sh 
+ls
+./conviUTF8.sh 
+nano conviUTF8.sh
+ls
+./conviUTF8.sh 
+nano conviUTF8.sh
+./conviUTF8.sh 
+nano conviUTF8.sh
+./conviUTF8.sh 
+unicode 😎 
+sudo apt-get insatll unicode
+sudo apt-get install unicode
+unicode 😎 
+source .bashrc 
+print unicode("\350\207\252\345\212\250", "utf-8")
+echo $'\350\207\252\345\212\250\346\216'
+echo -e "\xf0\x9f\x98\x95"
+source .bashrc 
+printf 😕
+printf 😕 | iconv -f ISO-8859-1
+printf 😕 | iconv -t UTF8
+printf 😕 | iconv -f UTF8
+printf 😕 | iconv -f UTF-8
+printf 😕 | iconv -f ISO-8859-1
+source .bashrc 
+ls
+unicode 😎 
+man unicode
+unicode 😎  -o
+unicode -o 😎 
+unicode -h 😎 
+unicode -
+unicode 😎  -x
+unicode 😎
+iconv -l
+sudo apt-get install utf8-tool
+ls
+file -i .bashrc 
+iconv -f US-ASCII -t UTF-8 .bashrc 
+ls
+file -i .bashrc 
+iconv -f US-ASCII -t UTF-8 .bashrc > .bashrc 
+file -i .bashrc 
+iconv -f UTF-8 -t US-ASCII .bashrc > .bashrc 
+ls
+subl .bashrc 
+ls --all
+subl .bash_profile
+subl .bash_logout 
+ls
+subl .bashrc 
+cp /etc/skel/.bashrc ~/
+ls
+subl .bashrc 
+ls
+cd /usr/lib
+;s
+ls
+cd jvm/
+ls
+ls -l
+cd java-1.8.0-openjdk-amd64
+ls
+cd jre/
+ls
+cd ..
+cd
+echo $JAVA_HOME
+source .bashrc 
+echo $JAVA_HOME
+which java
+which javac
+java --version
+java -version
+source .bashrc 
+echo $HADOOP_CONF_DIR
+ls $HADOOP_CONF_DIR
+sudo rm hadoop_data
+sudo rm -r hadoop_data
+ls
+cd hadoop_data/
+ls
+echo $JAVA_HOME
+cd ..
+cd /usr/
+cd local
+ls
+cd jdk1.8.0_161/
+ls
+cd 
+source .bashrc 
+echo $JAVA_HOME
+cd Dev/
+cd Git/
+cd Dev/Git/
+ls
+clear
+cd Dev/
+cd
+source .bashrc 
+cd Dev/
+ls
+file -i .bashrc 
+clear
+source .bashrc 
+clear
+source .bashrc 
+clear
+source .bashrc 
+cd Dev/
+cd
+source .bashrc 
+clear
+source .bashrc 
+clear
+cd
+source .bashrc 
+clear
+source .bashrc 
+clear
+source .bashrc 
+clear
+source .bashrc 
+clear
+source .bashrc 
+k
+clear
+k
+source .bashrc 
+cleaar
+clear
+cleaar
+source .bashrc 
+clear
+source .bashrc 
+clear
+source .bashrc 
+clear
+source .bashrc 
+clear
+source .bashrc 
+clear
+source .bashrc 
+clear
+source .bashrc 
+clear
+source .bashrc 
+clear
+source .bashrc 
+clear
+cp .bashrc Dropbox/
+subl .bashrc 
+jps
+cd Dev/Git/Hadoop-Image-Matching/
+ls
+which hadoop
+jps
+sudo jps
+ls
+jps
+ls
+cd sequence/
+ls
+hadop fs -mkdir img
+hadoop fs -mkdir img
+hadoop fs -mkdir /img
+sudo hadoop fs -mkdir /img
+hadoop fs -mkdir /img
+hadoop fs -mkdir img
+hadoop fs -mkdir /img
+ls
+sudo -u hdfs hdfs dfs -chmod 775 /
+sudo -u hduser hdfs dfs -chmod 775 /
+hadoop fs -mkdir /img
+hadoop fs -ls
+hadoop fs -ls /
+hadoop fs -put images/* /img
+sudo hadoop fs -put images/* /img
+hadoop fs -ls /
+sudo chmod +x /home/hduser
+ls -l /home
+hdfs dfs -chmod -R 755 /user
+hdfs dfs -chmod -R 755 /
+hadoop fs -ls /
+hadoop fs -ls /img
+hdfs dfs -chmod -R 755 /img
+hadoop fs -ls /
+hadoop fs -put images/* /img
+sudo -u hadoop fs -put images/* /img
+sudo -u trimo hadoop fs -put images/* /img
+sudo -u trimo hdfsdfs -put images/* /img
+sudo -u trimo hadoop fs -put images/* /img
+hadoop fs -ls /
+jps
+clear
+sudo adduser hduser sudo
+sudo su hduser
+exit
+which hadoop
+which python
+ls
+python --version
+source .bashrc 
+python --version
+source .bashrc 
+pip --version
+which java
+which javac
+echo $JAVA_HOME
+which hadoop
+cd /usr/local
+ls
+cd hadoop/
+ls
+cd lib
+ls
+cd ..
+ls hadoop2_data/
+ls hadoop_data/
+cd hadoop_data/
+ls
+tree .
+cd ..
+cd..
+tree hadoop2_data/
+cd
+source .bashrc 
+ls
+start-all.sh 
+sudo start-all.sh 
+cp .bashrc Dropbox/
+sudo hadoop
+chown -R trimo /usr/local/hadoop
+sudo chown -R trimo /usr/local/hadoop
+sudo hadoop
+hadoop
+sudo chown -R trimo /usr/local/hadoop/bin
+sudo hadoop
+hadoop
+sudo subl .bashrc 
+start-all.
+start-all.sh 
+sudo jps 
+stop-all.sh 
+sudo /usr/local/hadoop/sbin/start-all.sh 
+sudo jps
+sudo /usr/local/hadoop/sbin/stop-all.sh 
+sudo ls /usr/local/hadoop/
+sudo tree /usr/local/hadoop/
+jps
+sudo subl /usr/local/hadoop/etc/hadoop/core-site.xml 
+hadoop namenode -format
+sudo hadoop namenode -format
+sudo /usr/local/hadoop/bin/hadoop namenode -format
+start-all.sh 
+jps
+sudo jps
+stop-all.sh 
+gedit /usr/local/hadoop/logs/hadoop-trimo-namenode-dimo.out
+jps
+sudo chown -R trimo hadoop_data/hdfs/datanode
+sudo chown -R trimo hadoop_data/hdfs/namenode
+start-all.sh 
+jps
+sudo jps
+cd /usr/local/hadoop/
+ls
+cd hadoop
+cd hadoop_data/
+ls
+cd hdfs/
+ls
+cd datanode/
+cd ..
+cd ...
+cd ..
+ls
+cd etc/hadoop/
+ls
+sudo subl hdfs-site.xml 
+sudo start-all.sh 
+sudo ./start-all.sh 
+cd ../../sbin/
+ls
+sudo ./start-all.sh 
+jps
+sudo jps 
+sudo ./stop-all.sh 
+stop-all.sh 
+jps
+sudo jps
+sudo ./start-all.sh 
+jps
+sudo jps
+sudo ./stop-all.sh 
+cd ..
+cd etc/
+ls
+cd hadoop/
+ls
+cd ..
+ls
+cd ..
+ls
+cd hadoop_data/
+ls
+cd hdfs/
+ls
+cd datanode/
+ls
+cd ..
+cd..
+cd ..
+rm -r hadoop_data
+;s
+ls
+sudo subl etc/hadoop/hdfs-site.xml 
+rm -r tmp
+sudo rm -r tmp
+sudo subl etc/hadoop/core-site.xml 
+ls
+cd bin/
+l
+ls
+sudo ./hadoop namenode -format
+ls
+cd ..
+cd sbin/
+ls
+sudo jps
+sudo ./start-all.sh 
+ls
+sudo jps
+cd ..
+cd etc/
+ls
+cd hadoop/
+ls
+cd ..
+ls
+cd ..
+ls
+sudo rm -r tmp
+sudo bin/hadoop namenode -format
+sudo jps
+stop-all.sh 
+sudo jps
+sudo sbin/stop-all.sh 
+sudo jps
+sudo sbin/start-all.sh 
+sudo jps
+sudo sbin/stop-all.sh 
+sudo rm -r tmp
+ls
+sudo bin/hadoop namenode -format
+ls
+sudo bin/hdfs namenode -format
+sudo bin/hdfs getconf -namenodes
+sudo subl etc/hadoop/hadoop-env.sh 
+echo $JAVA_HOME
+source ~/.bashrc 
+echo $JAVA_HOME
+ls
+sudo bin/hadoop namenode -format
+ls
+sudo sbin/start-all.sh 
+sudo jps
+sudo sbin/stop-all.sh 
+ls
+cd tmp/
+ls
+cd ..
+subl /usr/local/hadoop/logs/hadoop-root-namenode-dimo.out
+ls
+cd 
+java -version
+sudo addgroup hadoop
+sudo adduser --ingroup hadoop hduser
+su - hduser
+sudo su
+ls
+groups 
+cat /etc/group
+usermod -G `cat /etc/group |  grep bob | grep -v hadoop | cut -d ':' -f 1 | tr '\n' ',' | sed 's/,$//'` bob
+usermod -G `cat /etc/group |  grep trimo | grep -v hadoop | cut -d ':' -f 1 | tr '\n' ',' | sed 's/,$//'` bob
+usermod -G `cat /etc/group |  grep trimo | grep -v hadoop | cut -d ':' -f 1 | tr '\n' ',' | sed 's/,$//'` trimo
+sudo usermod -G `cat /etc/group |  grep trimo | grep -v hadoop | cut -d ':' -f 1 | tr '\n' ',' | sed 's/,$//'` trimo
+cat /etc/group
+sudo subl /etc/group
+ls
+source .bashrc 
+ls
+cd /usr/local/hadoop/
+ls
+sudo rm -r tmp]
+sudo rm -r tmp
+etc/hadoop/ namenode -format
+etc/hadoop/hadoop namenode -format
+.etc/hadoop/hadoop namenode -format
+etc/hadoop/.hadoop namenode -format
+ls
+cd etc/
+ls
+cd 
+cd /usr/local/hadoop/
+ls
+cd lib
+ls
+cd ..
+cd bin/
+ls
+hadoop namenode -format
+./hadoop namenode -format
+hadoop namenode -format
+ls
+cd ..
+sudo subl etc/hadoop/yarn-site.xml 
+sudo subl etc/hadoop/mapred-site.xml
+cd
+sudo rm -r /usr/local/hadoop
+ls
+sudo apt-get update
+java -version
+sudo addgroup hadoop
+sudo adduser --ingroup hadoop hduser
+groups hduser
+sudo apt-get install ssh
+which ssh
+which sshd
+su hduser
+su
+sudo addgroup hadoop
+sudo adduser --ingroup hadoop hduser
+su hduser
+exit
+su hduser
+exit
+subl .bashrc 
+👨
+🌃
+🔯
+💫
+source .bashrc 
+clear
+cp .bashrc Dropbox/
+cd Dropbox/
+ls
+cat .bashrc 
+exit
+python --version
+ls -l
+ls --all
+ls
+cd tensorflow/
+ls
+subl .bashrc 
+python --version
+source .bashrc 
+ls
+cd Dev/
+ps aux
+ps aux | grep rails(image)
+ps aux | grep 'image'
+ps aux
+sudo apt remove --purge imagemagick
+convert --version
+cd Dev/
+;s
+subl .bashrc 
+cd
+subl .bashrc 
+source .bashrc 
+cd Dev/
+;s
+ls
+cd
+source .bashrc 
+cleaar
+clear
+cd Dev/
+ls
+cd
+source .bashrc 
+clear
+cd Dev/
+ls
+cd Git/
+ls
+clear
+⭮
+📐
+🔺
+➠
+cp .bashrc Dropbox/
+cd
+cp .bashrc Dropbox/
+ls
+clear
+pip install google_images_download
+pip -version
+pip --version
+python -m pip install google_images_download
+pip install google_images_download --user
+ls
+cd Downloads/
+mkdir imagetemp && cd imagetemp
+googleimagesdownload --keywords "Polar bears, baloons, Beaches" --limit 20
+ls
+cd downloads/
+ls
+cd Polar\ bears/
+ls
+nautilus .
+cd
+cd Downloads/imagetemp/
+googleimagesdownload --keywords "Polar bears, baloons, Beaches" --limit 3
+clear
+cd
+cd Dev/Git/
+mkdir MLDL-Study
+cd M
+cd MLDL-Study/
+ls
+subl ~/.bashrc 
+source ~/.bashrc 
+clear
+mkdir MNIST-data
+cd MNIST-data/
+ls
+sudo apt-get install python-pip python-dev python-virtualenv 
+source ~/tensorflow/bin/activate
+pip --version
+pip install --upgrade tensorflow
+pip install --upgrade pip
+pip install --upgrade TF_PYTHON_URL
+pip install --upgrade $TF_PYTHON_URL
+echo $TF_PYTHON_URL
+source ~/.bashrc 
+echo $TF_PYTHON_URL
+source ~/tensorflow/bin/activate
+pip install --upgrade $TF_PYTHON_URL
+subl custom_mnist_softmax.py
+wget http://yann.lecun.com/exdb/mnist/train-images-idx3-ubyte.gz
+wget http://yann.lecun.com/exdb/mnist/train-labels-idx1-ubyte.gz
+wget http://yann.lecun.com/exdb/mnist/t10k-images-idx3-ubyte.gz
+wget http://yann.lecun.com/exdb/mnist/t10k-labels-idx1-ubyte.gz
+ls
+nautilus ,
+nautilus .
+mkdir data
+tar xvzf *.gz data/
+ls data/
+gunzip *.gz data/
+ls data/
+ls
+cp *ubyte data/
+ls
+ls data/
+rm *ubyte
+ls
+yupyter
+jupyter
+ls
+python custom_mnist_softmax.py 
+ls
+source ~/.bashrc 
+source ~/tensorflow/bin/activate
+python custom_mnist_softmax.py 
+subl showimg.py
+ls data/
+python showimg.py 
+ls
+python showimg.py 
+ls data/
+python showimg.py 
+ls
+python showimg.py 
+clear
+ls
+python showimg.py 
+pip install bpy
+subl db.py
+python db.py 
+python showimg.py 
+whick ImageMagick
+ca /usr/share/applications/
+cd /usr/share/applications/
+ls
+cd 
+cd /usr/
+ls
+find . |grep application
+find . | grep ImageMagick
+sudo apt-get remove imagemagick
+ls
+cd lib
+ls
+cd x86_64-linux-gnu/
+ls
+cd ImageMagick-6.8.9/
+ls
+cd ..
+rm -r ImageMagick-6.8.9
+ls
+sudo rm -r ImageMagick-6.8.9
+find . | grep ImageMagick
+cd ..
+cd share/
+find . | grep ImageMagick
+ls
+sudo rm -r ImageMagick-6
+find . | grep ImageMagick
+cd cmake-3.5/
+cd Modules/
+ls
+find . | grep ImageMagick
+sudo rm -r FindImageMagick.cmake 
+ls
+cd 
+find . | grep ImageMagick
+sudo find . | grep ImageMagick
+clear
+exit
